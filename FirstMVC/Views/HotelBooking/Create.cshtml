@@ -1,0 +1,31 @@
+﻿@model HotelBooking
+<h1>Hotel Booking Form</h1>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                <h6>Booking Form</h6>
+            </div>
+            <div class="card-body">
+                <form asp-controller="HotelBooking" asp-action="CreateForm" method="post">
+                    <div class="mb-3">
+                    <label class="form-label">Guest Name</label>
+                    <input asp-for="GuestName" type="text" class="form-control"/>
+                </div>
+                <div class="mb-3">
+                        <label class="form-label">Start Date</label>
+                        <input asp-for="DateStart" type="date" class="form-control" />
+                </div>
+                <div class="mb-3">
+                        <label class="form-label">End Date</label>
+                        <input asp-for="EndDate" type="date" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+             </form>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+</div>

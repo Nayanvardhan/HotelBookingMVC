@@ -1,0 +1,10 @@
+﻿@model List<FirstMVC.Models.HotelBooking>
+    
+<ul>
+    @foreach(var hb in Model)
+    {
+        <li>
+            @hb.GuestName (@hb.DateStart,@hb.EndDate)
+        </li>
+    }
+</ul>
